@@ -1,5 +1,6 @@
 Inicio do Projeto com:
 
-Node.js
-Javascript
-Mongodb
+- Node.js
+- ejs
+- Javascript
+- Mongodb
