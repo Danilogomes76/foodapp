@@ -1,0 +1,47 @@
+body{
+    background-color: gray;
+}
+
+.container img{
+    width: 1;
+}
+
+#icon{
+    width: 50px;
+}
+
+.lunchs{
+    height: 30%;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.price{
+    font-size:2em;
+}
+
+.more{
+    width: 30px;
+    padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=text] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+   width: 30px;
+   text-align: center;
+   border: none;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
