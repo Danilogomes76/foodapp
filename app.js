@@ -14,6 +14,7 @@ db.once("open", ()=>{console.log("bank loaded");})
 
 app.set("view engine", "ejs")
 
+app.use(express.static("public"))
 app.use("/style", express.static(__dirname + "/style"))
 app.use("/images", express.static(__dirname + "/images"))
 app.use("/script", express.static(__dirname + "/script"))
