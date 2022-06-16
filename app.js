@@ -2,10 +2,10 @@ const express = require("express")
 const app = express()
 const PORT = 3000
 const mongoose = require("mongoose")
-const path = require("path")
+
 const linkrouters = require("./routers/linkrouters")
 
-mongoose.connect("mongodb://localhost/Requests")
+mongoose.connect("mongodb://localhost/foods")
 
 let db = mongoose.connection
 
