@@ -1,7 +1,7 @@
 const Food = require("../models/Food")
 
 
-const addrequest = async (req, res,)=>{
+const addrequest = async (req, res)=>{
     let pedido = new Food(req.body)
 
     try{
@@ -12,6 +12,13 @@ const addrequest = async (req, res,)=>{
     }
 }
 
+const allrequest = async (req, res)=>{
+    try {
+        let foods = await Food.find({})
+        res.render('carrinho', {foods})
+    } catch (error) {
+        res.send(`Houve um erro: ${error}`)
+    }
+}
 
-
-module.exports = {addrequest}
+module.exports = {addrequest, allrequest}
