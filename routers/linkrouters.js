@@ -8,9 +8,7 @@ router.get("/", (req,res)=>{res.render('index')})
 
 router.post("/", upload.single('request'), linkcontroler.addrequest)
 
-router.get("/carrinho",(req, res)=>{
-    res.render('carrinho')
-})
+router.get("/carrinho",linkcontroler.allrequest)
 
 router.get("/sobre",(req, res)=>{
     res.render('sobre')
