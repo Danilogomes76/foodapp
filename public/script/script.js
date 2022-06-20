@@ -11,9 +11,20 @@ function value(element){
     }
     else if(alt == "menos"){
         quantidade.value =+ quantidade.value - 1
-        if(quantidade.value == -1){
-            quantidade.value = 0
+        if(quantidade.value == 0){
+            quantidade.value = 1
         }
     }
     
 }
+
+function deletefood (id){
+    fetch('/' + id ,{method: "DELETE"}).then(res=>{
+        res.text().then(foodid=>{
+            document.getElementById(foodid).remove()
+        })
+    })
+}
+
+
+

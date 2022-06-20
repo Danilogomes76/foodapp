@@ -1,0 +1,21 @@
+#car{
+    text-align: center;
+}
+
+.foodbtn{
+    width: 3rem;
+    width: 3rem;
+    border: 2px solid;
+    border-radius: 10px;
+    background: antiquewhite;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+#inp{
+    border: 1px solid black;
+    width: 30%;
+}

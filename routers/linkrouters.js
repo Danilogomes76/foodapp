@@ -14,4 +14,6 @@ router.get("/sobre",(req, res)=>{
     res.render('sobre')
 })
 
+router.delete("/:id", linkcontroler.deletefood)
+
 module.exports = router
